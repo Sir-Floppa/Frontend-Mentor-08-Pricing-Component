@@ -12,3 +12,24 @@ body {
     url('assets/images/bg-bottom.svg') no-repeat bottom left,
     url('assets/images/bg-top.svg') no-repeat top right;
 }
+
+button {
+  border: none;
+  outline: 1px solid transparent;
+  color: white;
+  background-image: linear-gradient(
+    90deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+  padding: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: color 1s, outline 1s, background-image 1s;
+
+  &:hover {
+    background-image: none;
+    outline: 1px solid hsl(237, 63%, 64%);
+    color:hsl(237, 63%, 64%);
+  }
+}

@@ -1,18 +1,25 @@
-:host {
-  height: 100%;
-  padding: 1rem;
-}
-
-div {
+.card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
+  background-color: white;
+  border-radius: .75rem;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.05));
+  padding: 3rem 2rem;
 
   * {
     width: 100%;
     text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    filter: none;
+    gap: 1rem;
+    padding: 0;
   }
 
   h1, p {
@@ -21,17 +28,5 @@ div {
 
   h2 {
     font-size: 4rem;
-  }
-
-  button {
-    border: none;
-    color: white;
-    background: linear-gradient(
-      90deg,
-      hsl(236, 72%, 79%) 0%,
-      hsl(237, 63%, 64%) 100%
-    );
-    padding: 1rem;
-    border-radius: .5rem;
   }
 }
