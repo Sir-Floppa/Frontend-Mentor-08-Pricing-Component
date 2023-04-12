@@ -19,4 +19,6 @@ export class PlanCardComponent {
       sendUpTo: 1,
     },
   };
+
+  @Input() position: string;
 }
