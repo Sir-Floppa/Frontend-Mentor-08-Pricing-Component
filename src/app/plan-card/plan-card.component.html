@@ -1,0 +1,23 @@
+<div>
+  <h1>{{ subPlan.name }}</h1>
+  <h2>{{ subPlan.price | currency }}</h2>
+
+  
+  <div class="specs">
+    <hr>
+    <p>
+      {{ subPlan.specs.storage.amount }} {{ subPlan.specs.storage.unit }}
+    </p>
+    <hr>
+    <p>
+      {{ subPlan.specs.users }} Users Allowed
+    </p>
+    <hr>
+    <p>
+      Send up to {{ subPlan.specs.sendUpTo }} GB
+    </p>
+    <hr>
+  </div>
+
+  <button>LEARN MORE</button>
+</div>
