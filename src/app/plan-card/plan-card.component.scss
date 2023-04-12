@@ -67,9 +67,10 @@
     background-image: none;
     background-color: white;
     color: hsl(237, 63%, 64%);
-    :hover {
-      background-image: none;
-      background-color: rgba(255, 255, 255, 0);
+    &:hover {
+      background-color: transparent;
+      color: white;
+      outline: 1px solid white;
     }
   }
 }
