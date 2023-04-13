@@ -3,15 +3,21 @@
   <p>
     Anually
     <label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" [(ngModel)]="toggle">
       <span class="slider round"></span>
     </label>
     Monthly
   </p>
 
-  <section>
-    <app-plan-card [position]="'left'"></app-plan-card>
-    <app-plan-card [position]="'center'"></app-plan-card>
-    <app-plan-card [position]="'right'"></app-plan-card>
+  <section *ngIf="toggle">
+    <app-plan-card [position]="'left'" [subPlan]="basicPlan.monthly"></app-plan-card>
+    <app-plan-card [position]="'center'" [subPlan]="proPlan.monthly"></app-plan-card>
+    <app-plan-card [position]="'right'" [subPlan]="masterPlan.monthly"></app-plan-card>
   </section>
+  <section *ngIf="!toggle">
+    <app-plan-card [position]="'left'" [subPlan]="basicPlan.yearly"></app-plan-card>
+    <app-plan-card [position]="'center'" [subPlan]="proPlan.yearly"></app-plan-card>
+    <app-plan-card [position]="'right'" [subPlan]="masterPlan.yearly"></app-plan-card>
+  </section>
+
 </main>

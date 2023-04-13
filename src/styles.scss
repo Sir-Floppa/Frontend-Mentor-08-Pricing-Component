@@ -25,12 +25,11 @@ button {
   padding: 1rem;
   border-radius: .5rem;
   cursor: pointer;
-  transition: color 1s, outline 1s, background-image 1s, background-color 1s;
+  transition: color 1s, outline 1s, background-image 1s, background-color 1s, outline 1s;
 
   &:hover {
     background-image: none;
     background-color: white;
-    transition: background-color 1s;
     outline: 1px solid hsl(237, 63%, 64%);
     color:hsl(237, 63%, 64%);
   }
