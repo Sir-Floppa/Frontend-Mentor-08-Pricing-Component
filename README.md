@@ -12,7 +12,6 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
