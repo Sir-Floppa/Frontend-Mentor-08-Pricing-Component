@@ -29,8 +29,9 @@
     gap: 1rem;
     padding: 0;
   }
-  
-  h1, p {
+
+  h1,
+  p {
     font-size: 1.25rem;
     color: #6f728f;
   }
@@ -42,7 +43,7 @@
 }
 
 .left {
-  border-radius: .75rem 0 0 .75rem;
+  border-radius: 0.75rem 0 0 0.75rem;
 }
 
 .center {
@@ -55,7 +56,9 @@
     hsl(237, 63%, 64%) 100%
   );
 
-  h1, h2, p {
+  h1,
+  h2,
+  p {
     color: white;
   }
 
@@ -76,5 +79,15 @@
 }
 
 .right {
-  border-radius: 0 .75rem .75rem 0;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+@media (max-width: 1050px) {
+  .card {
+    border-radius: 0.75rem;
+  }
+
+  .center {
+    padding: 3rem 2rem;
+  }
 }

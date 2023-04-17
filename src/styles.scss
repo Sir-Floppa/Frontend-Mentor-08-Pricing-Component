@@ -34,3 +34,15 @@ button {
     color:hsl(237, 63%, 64%);
   }
 }
+
+@media (max-width: 1050px) {
+  
+}
+
+@media (max-width: 760px) {
+  body {
+    background: 
+      url('assets/images/bg-top.svg') no-repeat top right;
+    background-position-x: 50vw
+  }
+}

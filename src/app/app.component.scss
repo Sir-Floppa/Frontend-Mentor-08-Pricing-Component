@@ -104,3 +104,14 @@ main {
     background-image: none;
   }
 }
+
+@media (max-width: 1150px) {
+  section {
+    flex-direction: column;
+    padding-top: 3rem;
+    
+    * {
+      padding-bottom: 2rem;
+    }
+  }
+}
